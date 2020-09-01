@@ -10,9 +10,7 @@ public class LeapYear {
     }
 
     public boolean isLeap() {
-        if (divisibleBy(100) && ! divisibleBy(400))
-            return false;
-
+        if (divisibleBy(100)) return new LeapYear(year/100).isLeap();
         return divisibleBy(4);
     }
 }
