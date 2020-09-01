@@ -21,7 +21,6 @@ public class LeapYearTest {
         assertTrue( ! new LeapYear(1800).isLeap());
     }
 
-    @Disabled
     @Test
     void leap_if_divisible_by_400() {
         assertTrue(new LeapYear(1600).isLeap());
