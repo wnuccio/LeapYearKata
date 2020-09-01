@@ -1,7 +1,7 @@
-public class LeapYear {
+public class Year {
     private int year;
 
-    public LeapYear(int year) {
+    public Year(int year) {
         this.year = year;
     }
 
@@ -10,7 +10,7 @@ public class LeapYear {
     }
 
     public boolean isLeap() {
-        if (divisibleBy(100)) return new LeapYear(year/100).isLeap();
+        if (divisibleBy(100)) return new Year(year/100).isLeap();
         return divisibleBy(4);
     }
 }
